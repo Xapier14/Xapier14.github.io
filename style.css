@@ -37,7 +37,9 @@ p strong{
 .fullscreen-video-wrap video{
     width: auto;
     height: auto;
-    max-height: 150vh;
+    left: 50%;
+    top: 50%;
+    max-height: 100vh;
 }
 .header-overlay{
     height: 100vh;
@@ -70,7 +72,7 @@ p strong{
     color: #f1e6ff;
 }
 .welcome-text{
-    color: #e3ceff;
+    color: #f1e6ff;
 }
 .btn{
     background: #333942;
@@ -80,6 +82,12 @@ p strong{
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.1s ease 0s;
+}
+.section-divider{
+    height: 6px;
+    width: auto;
+    background: none;
+    z-index: 10;
 }
 .btn:hover{
     background: #414a58;
@@ -98,7 +106,7 @@ p strong{
     background: #b582f8;
 }
 section{
-    padding: 20px 0;
+    padding: 15px 0;
 }
 @media(max-width:960px){
     .container{
