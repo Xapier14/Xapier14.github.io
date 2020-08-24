@@ -37,9 +37,7 @@ p strong{
 .fullscreen-video-wrap video{
     width: auto;
     height: auto;
-    left: 50%;
-    top: 50%;
-    max-height: 100vh;
+    max-height: 150%;
 }
 .header-overlay{
     height: 100vh;
