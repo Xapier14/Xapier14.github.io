@@ -34,11 +34,6 @@ p strong{
     height: 100vh;
     overflow: hidden;
 }
-.fullscreen-video-wrap video{
-    width: auto;
-    height: auto;
-    max-height: 150%;
-}
 .header-overlay{
     height: 100vh;
     width: 100vw;
@@ -115,5 +110,18 @@ section{
         padding-right: 2rem;
         padding-left: 2rem;
         line-height: 4rem;
+    }
+}
+
+@media(min-aspect-ratio: 16/9){
+    .fullscreen-video-wrap video{
+        width: 100vw;
+        min-width: 100vw;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .fullscreen-video-wrap video{
+        width: auto;
+        height: 100vh;
     }
 }
