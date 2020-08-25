@@ -125,3 +125,24 @@ section{
         height: 100vh;
     }
 }
+@media(max-width:430px){
+    .header-button{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+@media(max-width:375px){
+    .welcome-header{
+        line-height: 2.8rem;
+    }
+}
+@media(max-width:320px){
+    .header-button{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 2.1rem;
+        margin-right: 2.1rem;
+    }
+}
