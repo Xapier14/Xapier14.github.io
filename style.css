@@ -228,7 +228,7 @@ section{
         min-width: 100vw;
     }
     .image-container{
-        min-height: 80vh;
+        min-height: 75vh;
     }
 }
 @media(max-aspect-ratio: 16/9){
