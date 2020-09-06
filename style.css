@@ -112,7 +112,7 @@ p strong{
 }
 .image-container {
     height: auto;
-    min-height: 20vh;
+    min-height: 50vh;
     max-height: 80vh;
     overflow: hidden;
     position: relative;
@@ -236,6 +236,16 @@ section{
         width: auto;
         height: 100vh;
     }
+    .image-container{
+        min-height: 50vh;
+    }
+}
+@media(max-width:820px){
+    .image-container{
+        min-height: 35vh;
+    }
+}
+@media(max-width:500px){
     .image-container{
         min-height: 20vh;
     }
