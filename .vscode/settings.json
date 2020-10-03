@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "SF Mono, Hack, 'Courier New', monospace",
+    "editor.fontWeight": "null",
+    "debug.console.fontFamily": "SF Mono, Consolas",
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontFamily": "SF Mono, Consolas"
+}
