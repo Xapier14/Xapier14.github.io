@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lance Crisang - Portfolio Web Page</title>
+    <meta name="description" content="Lance Crisang's Portfolio Web Page." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <div class="heading">
+        
+      </div>
+      <div class="v-header container">
+        <div class="fullscreen-video-wrap">
+          <video
+            src="video/bg1.mp4"
+            autoplay
+            loop
+            muted
+            poster="img/bgposter.png"
+          ></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1 class="welcome-header">Hello there!</h1>
+          <p class="welcome-text">
+            Welcome to my personal website! I am Lance Crisang, an aspiring
+            software engineer.<br />Click on '<strong>View Projects</strong>' to
+            view what I've been up to, or click '<strong>About Me</strong>' to
+            see my personal info. You can also contact me using the email
+            specified in my contact page.
+          </p>
+          <a href="#Projects" class="btn btn-projects header-button"
+            >View Projects</a
+          >
+          <a href="#About" class="btn btn-about header-button">About Me</a>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="section-divider"></div> -->
+    <section class="section section-a">
+      <a name="Projects"></a>
+      <div class="section-container">
+        <h1 class="section-header">My Projects</h1>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit
+          expedita debitis est quae nemo sed nam quasi quos quia iste odit
+          incidunt consequatur ex, maiores blanditiis dolore sapiente soluta
+          quibusdam aperiam. Rem inventore fuga vitae nulla aspernatur earum,
+          esse doloremque reiciendis vero sapiente doloribus commodi quos optio
+          magnam ipsam!
+        </p>
+      </div>
+      <div class="project-carousel">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <div class="image-container">
+          <img src="img/projects/1.png"/>
+          </div>
+          <div class="text">Project 1</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <div class="image-container">
+          <img src="img/projects/2.png"/>
+          </div>
+          <div class="text">Project 2</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <div class="image-container">
+          <img src="img/projects/3.png"/>
+          </div>
+          <div class="text">Project 3</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <div class="image-container">
+          <img src="img/projects/4.png"/>
+          </div>
+          <div class="text">Project 4</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+    </section>
+    <!-- <div class="section-divider"></div> -->
+    <section class="section section-b">
+      <a name="Scripts"></a>
+      <div class="section-container">
+        <h1 class="section-header">Section B</h1>
+        <p class="section-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit
+          expedita debitis est quae nemo sed nam quasi quos quia iste odit
+          incidunt consequatur ex, maiores blanditiis dolore sapiente soluta
+          quibusdam aperiam. Rem inventore fuga vitae nulla aspernatur earum,
+          esse doloremque reiciendis vero sapiente doloribus commodi quos optio
+          magnam ipsam!
+        </p>
+      </div>
+    </section>
+    <!-- <div class="section-divider"></div> -->
+    <section class="section section-c">
+      <a name="About"></a>
+      <div class="section-container">
+        <h1 class="section-header">Section B</h1>
+        <div class="project-text">
+          <p class="section-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit
+            expedita debitis est quae nemo sed nam quasi quos quia iste odit
+            incidunt consequatur ex, maiores blanditiis dolore sapiente soluta
+            quibusdam aperiam. Rem inventore fuga vitae nulla aspernatur earum,
+            esse doloremque reiciendis vero sapiente doloribus commodi quos
+            optio magnam ipsam!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="section-divider"></div> -->
+    <script src="" async defer></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
