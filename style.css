@@ -10,6 +10,11 @@ body {
 }
 .jumbotron{
     background-color: rgb(97, 52, 128) !important;
+    padding-top: 24px !important;
+    padding-bottom: 10px !important;
+}
+hr {
+    height: 2px !important;
 }
 .jumbotron div p {
     color: #f9fcff !important;
